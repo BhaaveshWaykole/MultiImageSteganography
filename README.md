@@ -51,8 +51,6 @@ The decoder reconstructs the hidden secret images from the latent image. It uses
 ### Encoder - Decoder Architecture :
 <img src="assets/1_nqzWupxC60iAH2dYrFT78Q.png">
 
-- Works as (Example) : 
-<img src="assets/model_architecture.png">
 Transposed Convolution (Deconvolution): Used to upsample the feature maps, reconstructing the original secret images from the latent image.
 Output: Three separate branches for each secret image, each with its own fully connected layers to ensure proper recovery.
 
@@ -66,9 +64,15 @@ Data Preprocessing: All images are resized to 256x256 pixels and normalized for 
 4. Evaluation Metrics
 The performance of the model is evaluated using the following metrics:
 
-Peak Signal-to-Noise Ratio (PSNR): Measures the quality of the hidden and recovered images by comparing them to the original images.
-Structural Similarity Index (SSIM): Assesses the visual similarity between the original and recovered images.
-Visual Quality Assessment: The hidden and revealed images are visually inspected for artifacts and distortion.
+- Validation and Testing:
+Validate model performance by analyzing Full Model Loss and Decoder Loss.
+
+- Visual Quality Assessment:
+Perform qualitative assessments of hidden and revealed images to ensure minimal visual distortion and maintain fidelity to original images.
+Generate visualizations to illustrate differences between original, hidden, and revealed images for comprehensive analysis.
+
+- Capacity Analysis:
+Evaluate the model's ability to conceal multiple secret images without significantly degrading the cover image’s quality, ensuring effective steganography.
 
 5. Dataset
 The model is trained on the ImageNet dataset, a widely used dataset containing millions of images across various categories. The diversity of the dataset helps the model generalize well to different types of images, ensuring robust performance across a wide range of cover and secret images.
