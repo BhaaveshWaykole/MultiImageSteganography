@@ -82,8 +82,9 @@ Capacity and Robustness: The model demonstrates the ability to hide multiple ima
 <img src = "./assets/outputs.png">
 
 # Usage Instructions
-<b> Clone the Repository : 
-run command : git clone https://github.com/BhaaveshWaykole/MultiImageSteganography.git
+### Clone the Repository by : 
+
+run command in Terminal / CMD : git clone https://github.com/BhaaveshWaykole/MultiImageSteganography.git
 
 
 # Future Work
