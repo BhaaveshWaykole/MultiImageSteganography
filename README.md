@@ -16,12 +16,12 @@ This deep learning-based approach extends the potential of steganography by usin
     
     1. Full Model Loss:
         
-        - Lossfull​=α⋅MSEembed​+β⋅MSEextract​+other_loss_components        
+        - Lossfull​= α⋅MSEembed ​+ β⋅MSEextract ​+ other_loss_components        
         <img src = "assets/full_model_loss.png">
 
     2. Decoder Loss :
         A Decoder Loss is used to measure the performance of the decoder, focused solely on the extraction process:
-        - Lossdecoder=MSEextract
+        - Lossdecoder = MSEextract
         <img src = "assets/decoder_loss.png">
 
         where,
@@ -51,6 +51,8 @@ The decoder reconstructs the hidden secret images from the latent image. It uses
 ### Encoder - Decoder Architecture :
 <img src="assets/1_nqzWupxC60iAH2dYrFT78Q.png">
 
+- Works as (Example) : 
+<img src="assets/model_architecture.png">
 Transposed Convolution (Deconvolution): Used to upsample the feature maps, reconstructing the original secret images from the latent image.
 Output: Three separate branches for each secret image, each with its own fully connected layers to ensure proper recovery.
 
