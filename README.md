@@ -78,9 +78,7 @@ Evaluate the model's ability to conceal multiple secret images without significa
 The model is trained on the ImageNet dataset, a widely used dataset containing millions of images across various categories. The diversity of the dataset helps the model generalize well to different types of images, ensuring robust performance across a wide range of cover and secret images.
 
 # Results
-Embedding Performance: The model successfully embeds three secret images into one cover image with minimal visual distortion. The visual quality of the cover image remains high, and the embedded data is imperceptible to the human eye.
-Decoding Accuracy: The decoder reconstructs the hidden secret images with high accuracy, achieving good results on both PSNR and SSIM metrics.
-Capacity and Robustness: The model demonstrates the ability to hide multiple images without compromising the structural properties of the cover image, making it suitable for real-world applications.
+The performance of the image steganography model in this work will be critically evaluated using two major metrics: full model loss and decoder loss. These metrics will reflect how well the model succeeded in embedding private images into a public one and how effectively it was able to decode the images during extraction. Results from these evaluations will highlight both the capabilities and limitations of this model.
 
 ### Following are the Results of Encoded secret imaged :
 <img src = "./assets/outputs.png">
