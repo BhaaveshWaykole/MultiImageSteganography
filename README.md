@@ -49,6 +49,12 @@ Embedding Performance: The model successfully embeds three secret images into on
 Decoding Accuracy: The decoder reconstructs the hidden secret images with high accuracy, achieving good results on both PSNR and SSIM metrics.
 Capacity and Robustness: The model demonstrates the ability to hide multiple images without compromising the structural properties of the cover image, making it suitable for real-world applications.
 
+<li>
+<ul>
+Following are the Results of Encoded secret imaged :
+<img src = "./assets/outputs.png">
+<ul>
+<li>
 
 # Usage Instructions
 <b> Clone the Repository : 
