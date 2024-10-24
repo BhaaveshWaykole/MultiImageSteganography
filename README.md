@@ -15,11 +15,14 @@ This deep learning-based approach extends the potential of steganography by usin
     <li>
     1. Full Model Loss:
         Lossfull​=α⋅MSEembed​+β⋅MSEextract​+other_loss_components
+        
         <img src = "assets/full_model_loss.png">
-        <br>
+
+
     2. Decoder Loss :
         A Decoder Loss is used to measure the performance of the decoder, focused solely on the extraction process:
         Lossdecoder=MSEextract
+
         <img src = "assets/decoder_loss.png">
         where,
         1. MSEembed: This measures the error in embedding the secret images into the cover image. A lower MSEembed means the secret images are hidden within the cover image with minimal distortion. 
